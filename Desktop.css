@@ -2,12 +2,40 @@
     border-radius: 7.5px;
     min-height: 150px;
     min-width: 150px;
+    border: 2.5px solid #FFFFFF;
 }
 .DesktopJS-window.ltr {
     direction: ltr;
 }
 .DesktopJS-window.rtl {
     direction: rtl;
+}
+.DesktopJS-window.rtl .BTNs {
+    direction: ltr;
+}
+.DesktopJS-window.ltr .BTNs {
+    direction: rtl;
+}
+.DesktopJS-window.rtl .BTNs span {
+  direction: rtl;
+}
+.DesktopJS-window.ltr .BTNs span {
+  direction: ltr;
+}
+.DesktopJS-window.rtl .BTNs span {
+    float: right;
+    margin: 2.5px;
+}
+.DesktopJS-window.ltr .BTNs span {
+    float: left;
+    margin: 2.5px;
+}
+.DesktopJS-window .BTNs span {
+    min-width: calc(100% - 70px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 2px;
 }
 .DesktopJS-window.light {
     background: #f8f2ea;
@@ -49,4 +77,10 @@
 }
 .DesktopJS-window.resizable .inner {
     height: calc(100% - 60px)!important;
+}
+.DesktopJS-window.openCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
 }

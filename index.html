@@ -5,9 +5,16 @@
     <title>DesktopJS example</title>
     <script src="./Desktop.js" charset="utf-8"></script>
 </head>
-<body></body>
+<body><h1>Hello too!</h1></body>
 <script>
   var desktop = new DesktopJS({theme: "light" , dir: "ltr"});
-  var windowID = desktop.newWindow({properties: {resizable: "both"} , content: "<h1>Hello World!</h1>"});
+  var windowID = desktop.newWindow({properties: {resizable: "both" , openCenter: true} , content: `
+    <style>
+      h1 {
+        margin: 0;
+      }
+    </style>
+    <h1>Hello world!</h1>
+  `});
 </script>
 </html>
