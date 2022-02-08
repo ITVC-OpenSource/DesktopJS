@@ -1,6 +1,7 @@
 # DesktopJS
 DesktopJS library is a library for building windows and manage them...
 
+# How To Use
 If you want to use this library, You should import(include) {Desktop.js and Desktop.css} from this repository...
 Such this:
 
