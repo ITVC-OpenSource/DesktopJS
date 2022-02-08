@@ -45,6 +45,9 @@ class DesktopJS {
                 //this.makeDraggable(id);
                 win.style.width = width;
                 win.style.height = height;
+                if (obj.content === undefined) {
+                    obj.content === "It's empty!!!";
+                }
                 win.innerHTML = `
                     <div class="BTNs">
                         <button class="closeButton" width="25px" height="25px" onclick="let desktop = new DesktopJS();desktop.close('${id}');">
@@ -59,17 +62,13 @@ class DesktopJS {
                         </button>
                     </div>
                     <div class="inner">
-                        Hello World!
+                        ${obj.content}
                     </div>
                 `;
                 document.body.appendChild(win);
                 return id;
             }
         }
-    }
-
-    compileJamy(code) {
-        return code;
     }
 
     close(element) {
