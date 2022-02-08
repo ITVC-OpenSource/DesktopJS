@@ -21,7 +21,7 @@ And in your JS file Such this:
 
 ```javascript
 let desktop = new DesktopJS({theme: "light" , dir: "ltr"});
-desktop.newWindow({properties: {resizable: "both"} , content: "<h1>Hello World!</h1>"}});
+desktop.newWindow({properties: {resizable: "both"} , content: "<h1>Hello World!</h1>"});
 ```
 
 Congratulations!!!
