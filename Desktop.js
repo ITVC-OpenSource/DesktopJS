@@ -26,8 +26,8 @@ class DesktopJS {
                 win.classList.add(this.theme.toString());
                 win.classList.add(this.dir.toString());
                 win.classList.add("el-" + id.toString());
-                if (CJ.App.resizable !== undefined) {
-                    if (CJ.App.resizable !== "none") {
+                if (CJ.properties.resizable !== undefined) {
+                    if (CJ.properties.resizable !== "none") {
                         win.classList.add("resizable");
                     }
                 }
