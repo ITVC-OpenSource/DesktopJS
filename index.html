@@ -1,0 +1,14 @@
+<html>
+<head>
+    <link rel="stylesheet" href="Desktop.css" />
+    <script src="Require.min.js"></script>
+    <meta charset="UTF-8">
+</head>
+<body dir="rtl"></body>
+<script>
+    requirejs(["./Desktop"], function(Desktop) {
+        let desktop = new DesktopJS({theme: "light" , dir: "rtl"});
+        desktop.newWindow({jamyCode: {App: {resizable: "both"} , content: ""}});
+    });
+</script>
+</html>

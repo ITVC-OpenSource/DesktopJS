@@ -1,0 +1,52 @@
+.DesktopJS-window {
+    border-radius: 7.5px;
+    min-height: 150px;
+    min-width: 150px;
+}
+.DesktopJS-window.ltr {
+    direction: ltr;
+}
+.DesktopJS-window.rtl {
+    direction: rtl;
+}
+.DesktopJS-window.light {
+    background: #f8f2ea;
+}
+.DesktopJS-window.dark {
+    background: #635f56;
+}
+.DesktopJS-window .BTNs {
+    margin: 5px;
+}
+.DesktopJS-window.resizable {
+    resize: both;
+    overflow: auto;
+}
+.DesktopJS-window .BTNs button {
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.DesktopJS-window .minimizeButton {
+    font-weight: 500;
+}
+.DesktopJS-window .closeButton , .DesktopJS-window .minimizeButton {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #CCCCCC;
+    margin-right: 0px!important;
+}
+.DesktopJS-window .inner {
+    background: #FFF;
+    width: calc(100% - 25px);
+    margin: 5px auto auto;
+    border-radius: 5px;
+    padding: 5px;
+    height: calc(100% - 55px);
+}
+.DesktopJS-window.resizable .inner {
+    height: calc(100% - 60px)!important;
+}
